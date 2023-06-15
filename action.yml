@@ -1,0 +1,22 @@
+name: Procesamiento de archivo
+description: Elimina líneas duplicadas, líneas en blanco y ordena alfabéticamente un archivo de texto.
+
+inputs:
+  input_file:
+    description: 'Ruta del archivo de entrada'
+    required: true
+  output_file:
+    description: 'Ruta del archivo de salida'
+    required: true
+  sort:
+    description: 'Indica si se debe ordenar alfabéticamente (true/false)'
+    required: true
+    default: 'false'
+  remove_duplicates:
+    description: 'Indica si se deben quitar líneas duplicadas (true/false)'
+    required: true
+    default: 'false'
+
+runs:
+  using: 'node12'
+  main: 'index.js'
