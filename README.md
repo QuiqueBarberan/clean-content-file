@@ -2,6 +2,7 @@
 Contiene un action que quita duplicados y reordena los datos
 
 ## Parametros
+```
 inputs:
   input_file:
     description: 'Ruta del archivo de entrada'
@@ -17,3 +18,4 @@ inputs:
     description: 'Indica si se deben quitar líneas duplicadas (true/false)'
     required: true
     default: 'false'
+```
